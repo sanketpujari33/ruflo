@@ -15,7 +15,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "node init && tsc",
     "benchmark:canonicalization": "npm run build && node scripts/benchmark-envelope-canonicalization.mjs",
     "test": "vitest run",
     "test:watch": "vitest",

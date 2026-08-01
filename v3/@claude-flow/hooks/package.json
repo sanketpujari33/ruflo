@@ -51,7 +51,7 @@
     "guidance": "./dist/cli/guidance-cli.js"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "node init && tsc -p tsconfig.json",
     "clean": "rm -rf dist",
     "test": "vitest run",
     "test:watch": "vitest watch",

@@ -9,7 +9,7 @@
     ".": "./dist/index.js"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "node init && tsc",
     "test": "vitest run",
     "release": "semantic-release"
   },
