@@ -11,7 +11,7 @@
   },
   "scripts": {
     "test": "vitest run",
-    "build": "tsc"
+    "build": "node init && tsc"
   },
   "devDependencies": {
     "vitest": "^4.1.0"

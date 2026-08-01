@@ -18,7 +18,7 @@
   },
   "scripts": {
     "test": "vitest run",
-    "build": "tsc"
+    "build": "node init && tsc"
   },
   "dependencies": {
     "sql.js": "^1.10.3"

@@ -13,7 +13,7 @@
     "bench": "vitest bench",
     "bench:attention": "vitest bench benchmarks/attention/",
     "bench:startup": "vitest bench benchmarks/startup/",
-    "build": "tsc"
+    "build": "node init && tsc"
   },
   "dependencies": {
     "@ruvector/attention": "latest",

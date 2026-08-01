@@ -40,10 +40,10 @@
     "README.md"
   ],
   "scripts": {
-    "build": "tsup",
-    "build:wasm": "./scripts/build-wasm.sh --release --opt-level 3",
-    "build:all": "npm run build:wasm && npm run build",
-    "build:analyze": "tsup --metafile && npx esbuild-visualizer --metadata ./dist/metafile-*.json --filename bundle-analysis.html",
+    "build": "node init && tsup",
+    "build:wasm": "node init && ./scripts/build-wasm.sh --release --opt-level 3",
+    "build:all": "node init && npm run build:wasm && npm run build",
+    "build:analyze": "node init && tsup --metafile && npx esbuild-visualizer --metadata ./dist/metafile-*.json --filename bundle-analysis.html",
     "clean": "rm -rf dist",
     "typecheck": "tsc --noEmit",
     "test": "vitest",

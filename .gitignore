@@ -58,9 +58,7 @@
 .claude-flow/
 .claude/settings.local.json
 .deno/
-.env
 .env.*.local
-.env.local
 .hive-mind/
 .hive-mind/hive.db*
 .idea/
@@ -80,7 +78,6 @@
 .swarm/
 .swarm/memory.db*
 .turbo/
-.vscode/
 /coordination/
 /memory/
 /memory/agents/*
@@ -164,8 +161,6 @@ hive-mind-prompt-*.txt
 .claude-flow/logs/
 
 # Environment variables — block ALL .env variants except .example templates
-.env
-.env.*
 !.env.example
 !.env.*.example
 
@@ -181,3 +176,4 @@ v3/@claude-flow/cli/plugins/
 # Runtime proven-config adoption state (per-install, not source)
 .claude/proven-config.json
 .claude/.proven-config-version
+config.bat

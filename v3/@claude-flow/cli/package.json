@@ -81,7 +81,7 @@
     "catalog-manifest.json"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "node init && tsc",
     "check:metaharness-pins": "node ../../../scripts/check-metaharness-pins.mjs",
     "test": "vitest run",
     "test:plugin-store": "npx tsx src/plugins/tests/standalone-test.ts",
